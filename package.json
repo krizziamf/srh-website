@@ -1,0 +1,21 @@
+{
+  "name": "srhw_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix srhwebsite",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "srh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.6"
+  }
+}
